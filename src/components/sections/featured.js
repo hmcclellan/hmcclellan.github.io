@@ -87,14 +87,14 @@ const StyledProject = styled.div`
 
   .project-overline {
     margin: 10px 0;
-    color: var(--green);
+    color: var(--peony);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
     font-weight: 400;
   }
 
   .project-title {
-    color: var(--lightest-slate);
+    color: var(--lightest-plum);
     font-size: clamp(24px, 5vw, 28px);
 
     @media (min-width: 768px) {
@@ -112,8 +112,8 @@ const StyledProject = styled.div`
     z-index: 2;
     padding: 25px;
     border-radius: var(--border-radius);
-    background-color: var(--light-navy);
-    color: var(--light-slate);
+    background-color: var(--light-pink);
+    color: var(--light-plum);
     font-size: var(--fz-lg);
 
     @media (max-width: 768px) {
@@ -142,7 +142,7 @@ const StyledProject = styled.div`
 
     li {
       margin: 0 20px 5px 0;
-      color: var(--light-slate);
+      color: var(--light-plum);
       font-family: var(--font-mono);
       font-size: var(--fz-xs);
       white-space: nowrap;
@@ -153,7 +153,7 @@ const StyledProject = styled.div`
 
       li {
         margin: 0 10px 5px 0;
-        color: var(--lightest-slate);
+        color: var(--lightest-plum);
       }
     }
   }
@@ -164,7 +164,7 @@ const StyledProject = styled.div`
     position: relative;
     margin-top: 10px;
     margin-left: -10px;
-    color: var(--lightest-slate);
+    color: var(--lightest-plum);
     a {
       padding: 10px;
       svg {
@@ -189,7 +189,7 @@ const StyledProject = styled.div`
 
     a {
       width: 100%;
-      background-color: var(--green);
+      background-color: var(--peony);
       border-radius: var(--border-radius);
       vertical-align: middle;
 
@@ -215,7 +215,7 @@ const StyledProject = styled.div`
         bottom: 0;
         z-index: 3;
         transition: var(--transition);
-        background-color: var(--navy);
+        background-color: var(--pink);
         mix-blend-mode: screen;
       }
     }
@@ -248,7 +248,7 @@ const Featured = () => {
               title
               cover {
                 childImageSharp {
-                  fluid(maxWidth: 700, traceSVG: { color: "#64ffda" }) {
+                  fluid(maxWidth: 700, traceSVG: { color: "#ffabc8" }) {
                     ...GatsbyImageSharpFluid_withWebp_tracedSVG
                   }
                 }

@@ -38,7 +38,7 @@ const StyledText = styled.div`
         content: '▹';
         position: absolute;
         left: 0;
-        color: var(--green);
+        color: var(--peony);
         font-size: var(--fz-sm);
         line-height: 12px;
       }
@@ -60,7 +60,7 @@ const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--green);
+    background-color: var(--peony);
 
     &:hover,
     &:focus {
@@ -100,12 +100,12 @@ const StyledPic = styled.div`
     &:before {
       top: 0;
       left: 0;
-      background-color: var(--navy);
+      background-color: var(--pink);
       mix-blend-mode: screen;
     }
 
     &:after {
-      border: 2px solid var(--green);
+      border: 2px solid var(--peony);
       top: 20px;
       left: 20px;
       z-index: -1;
@@ -116,9 +116,9 @@ const StyledPic = styled.div`
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
-      avatar: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "me.jpg" }) {
+      avatar: file(sourceInstanceName: { eq: "images" }, relativePath: { eq: "headshot.jpeg" }) {
         childImageSharp {
-          fluid(maxWidth: 500, traceSVG: { color: "#64ffda" }) {
+          fluid(maxWidth: 500, traceSVG: { color: "#ffabc8" }) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
@@ -132,7 +132,12 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'HTML & (S)CSS', 'React', 'Vue', 'Node.js', 'WordPress'];
+  const skills = ['Jekyll', 'Illustrator', 'InDesign'];
+  const skill_website = [
+    'https://jekyllrb.com/',
+    'https://www.adobe.com/products/illustrator.html',
+    'https://www.adobe.com/products/indesign.html',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -141,26 +146,21 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm Brittany, a software engineer based in Boston, MA.</p>
-
+            <p>Hello! I'm Haley, a marketing student in Austin, TX.</p>
             <p>
-              I enjoy creating things that live on the internet, whether that be websites,
-              applications, or anything in between. My goal is to always build products that provide
-              pixel-perfect, performant experiences.
+              I'm currently in the Master of Science in Marketing program at
+              <a href="https://www.mccombs.utexas.edu">The University of Texas</a>.
             </p>
-
-            <p>
-              Shortly after graduating from{' '}
-              <a href="https://www.ccis.northeastern.edu">Northeastern University</a>, I joined the
-              engineering team at <a href="https://www.upstatement.com">Upstatement</a> where I work
-              on a wide variety of interesting and meaningful projects on a daily basis.
-            </p>
-
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>I'm currently using the following tools:</p>
           </div>
 
           <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+            {skills &&
+              skills.map((skill, i) => (
+                <li key={i}>
+                  <a href={skill_website[i]}>{skill}</a>
+                </li>
+              ))}
           </ul>
         </StyledText>
 

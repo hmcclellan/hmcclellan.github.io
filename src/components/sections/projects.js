@@ -49,7 +49,7 @@ const StyledProject = styled.div`
   &:focus {
     outline: 0;
     .project-inner {
-      transform: translateY(-5px);
+      transform: tranplumY(-5px);
     }
   }
 
@@ -62,7 +62,7 @@ const StyledProject = styled.div`
     height: 100%;
     padding: 2rem 1.75rem;
     border-radius: var(--border-radius);
-    background-color: var(--light-navy);
+    background-color: var(--light-pink);
     transition: var(--transition);
   }
 
@@ -71,7 +71,7 @@ const StyledProject = styled.div`
     margin-bottom: 30px;
 
     .folder {
-      color: var(--green);
+      color: var(--peony);
       svg {
         width: 40px;
         height: 40px;
@@ -80,7 +80,7 @@ const StyledProject = styled.div`
 
     .project-links {
       margin-right: -10px;
-      color: var(--light-slate);
+      color: var(--light-plum);
 
       a {
         padding: 5px 10px;
@@ -95,12 +95,12 @@ const StyledProject = styled.div`
 
   .project-title {
     margin: 0 0 10px;
-    color: var(--lightest-slate);
+    color: var(--lightest-plum);
     font-size: var(--fz-xxl);
   }
 
   .project-description {
-    color: var(--light-slate);
+    color: var(--light-plum);
     font-size: 17px;
 
     a {

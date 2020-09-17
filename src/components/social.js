@@ -19,7 +19,7 @@ const StyledSocialList = styled.ul`
     width: 1px;
     height: 90px;
     margin: 0 auto;
-    background-color: var(--light-slate);
+    background-color: var(--light-plum);
   }
 
   li {
@@ -32,7 +32,7 @@ const StyledSocialList = styled.ul`
     a {
       &:hover,
       &:focus {
-        transform: translateY(-3px);
+        transform: tranplumY(-3px);
       }
 
       svg {

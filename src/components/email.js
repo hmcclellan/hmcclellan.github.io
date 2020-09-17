@@ -16,7 +16,7 @@ const StyledLinkWrapper = styled.div`
     width: 1px;
     height: 90px;
     margin: 0 auto;
-    background-color: var(--light-slate);
+    background-color: var(--light-plum);
   }
 
   a {
@@ -29,7 +29,7 @@ const StyledLinkWrapper = styled.div`
 
     &:hover,
     &:focus {
-      transform: translateY(-3px);
+      transform: tranplumY(-3px);
     }
   }
 `;

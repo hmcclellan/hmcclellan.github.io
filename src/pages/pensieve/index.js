@@ -52,7 +52,7 @@ const StyledPostInner = styled.div`
   padding: 2rem 1.75rem;
   border-radius: var(--border-radius);
   transition: var(--transition);
-  background-color: var(--light-navy);
+  background-color: var(--light-pink);
 
   header,
   a {
@@ -67,7 +67,7 @@ const StyledPost = styled.div`
   &:focus {
     outline: 0;
     ${StyledPostInner} {
-      transform: translateY(-5px);
+      transform: tranplumY(-5px);
     }
   }
 `;
@@ -76,7 +76,7 @@ const StyledPostHeader = styled.div`
   margin-bottom: 30px;
 `;
 const StyledFolder = styled.div`
-  color: var(--green);
+  color: var(--peony);
   svg {
     width: 40px;
     height: 40px;
@@ -84,15 +84,15 @@ const StyledFolder = styled.div`
 `;
 const StyledPostName = styled.h5`
   margin: 0 0 10px;
-  color: var(--lightest-slate);
+  color: var(--lightest-plum);
   font-size: var(--fz-xxl);
 `;
 const StyledPostDescription = styled.div`
-  color: var(--light-slate);
+  color: var(--light-plum);
   font-size: 17px;
 `;
 const StyledDate = styled.span`
-  color: var(--light-slate);
+  color: var(--light-plum);
   font-family: var(--font-mono);
   font-size: var(--fz-xxs);
   text-transform: uppercase;
@@ -106,7 +106,7 @@ const StyledTags = styled.ul`
   list-style: none;
 
   li {
-    color: var(--green);
+    color: var(--peony);
     font-family: var(--font-mono);
     font-size: var(--fz-xxs);
     line-height: 1.75;

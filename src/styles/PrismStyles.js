@@ -3,9 +3,9 @@ import { css } from 'styled-components';
 const prismColors = {
   bg: `#112340`,
   lineHighlight: `#1d2d50`,
-  blue: `#5ccfe6`,
+  pink: `#ffabc8`,
   purple: `#c3a6ff`,
-  green: `#bae67e`,
+  peony: `#bae67e`,
   yellow: `#ffd580`,
   orange: `#ffae57`,
   red: `#ef6b73`,
@@ -84,7 +84,7 @@ const PrismStyles = css`
   .gatsby-highlight-code-line {
     display: block;
     background-color: ${prismColors.lineHighlight};
-    border-left: 2px solid var(--green);
+    border-left: 2px solid var(--peony);
     padding-left: calc(1em + 2px);
     padding-right: 1em;
     margin-right: -1.35em;
@@ -93,7 +93,7 @@ const PrismStyles = css`
 
   /* Language badges */
   .gatsby-highlight pre[class*='language-']::before {
-    background: var(--lightest-navy);
+    background: var(--lightest-pink);
     color: var(--white);
     font-size: var(--fz-xxs);
     font-family: var(--font-mono);
@@ -199,7 +199,7 @@ const PrismStyles = css`
   .token.builtin,
   .token.entity,
   .token.url {
-    color: ${prismColors.blue};
+    color: ${prismColors.pink};
   }
   .token.string,
   .token.char,
@@ -207,7 +207,7 @@ const PrismStyles = css`
   .token.regex,
   .token.variable,
   .token.inserted {
-    color: ${prismColors.green};
+    color: ${prismColors.peony};
   }
   .token.important,
   .token.bold {

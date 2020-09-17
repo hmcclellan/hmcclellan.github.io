@@ -2,12 +2,11 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Brittany Chiang',
-    description:
-      'Brittany Chiang is a software engineer specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
+    title: 'Haley McClellan',
+    description: 'Haley McClellan is a marketing student.',
+    siteUrl: 'https://hmcclellan.github.io', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    twitterUsername: '@bchiang7', //todo remove
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,11 +18,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'BrittanyChiang',
-        short_name: 'BrittanyChiang',
+        name: 'HaleyMcClellan',
+        short_name: 'HaleyMcClellan',
         start_url: '/',
-        background_color: config.colors.darkNavy,
-        theme_color: config.colors.navy,
+        background_color: config.colors.darkpink,
+        theme_color: config.colors.pink,
         display: 'minimal-ui',
         icon: 'src/images/logo.png',
       },
@@ -76,7 +75,7 @@ module.exports = {
               maxWidth: 700,
               linkImagesToOriginal: true,
               quality: 90,
-              tracedSVG: { color: config.colors.green },
+              tracedSVG: { color: config.colors.peony },
             },
           },
           {
