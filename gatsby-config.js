@@ -6,7 +6,6 @@ module.exports = {
     description: 'Haley McClellan is a marketing student.',
     siteUrl: 'https://hmcclellan.github.io', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7', //todo remove
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

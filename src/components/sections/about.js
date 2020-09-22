@@ -132,12 +132,13 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Jekyll', 'Illustrator', 'InDesign'];
+  const skills = ['Jekyll', 'Illustrator', 'R'];
   const skill_website = [
     'https://jekyllrb.com/',
     'https://www.adobe.com/products/illustrator.html',
-    'https://www.adobe.com/products/indesign.html',
+    'https://r-project.org',
   ];
+  const priors = ['ruby', 'python', '.NET'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -161,6 +162,11 @@ const About = () => {
                   <a href={skill_website[i]}>{skill}</a>
                 </li>
               ))}
+          </ul>
+          <p>In my past work, I've used:</p>
+
+          <ul className="skills-list">
+            {priors && priors.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
         </StyledText>
 
