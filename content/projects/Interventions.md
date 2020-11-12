@@ -9,6 +9,7 @@ tech:
   - JS
 company: 'Scout'
 showInProjects: false
+showInArchive: false
 ---
 
 Interactive marketing website for Northeastern's first annual student-led design conference, Interventions.

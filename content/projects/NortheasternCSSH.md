@@ -12,4 +12,5 @@ tech:
   - JS
 company: 'Upstatement'
 showInProjects: false
+showInArchive: false
 ---

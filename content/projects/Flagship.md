@@ -8,6 +8,7 @@ tech:
   - Chart.js
 company: 'Upstatement'
 showInProjects: false
+showInArchive: false
 ---
 
 A marketing site for an ambitious life sciences venture capital company.

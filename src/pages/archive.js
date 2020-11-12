@@ -157,7 +157,7 @@ const ArchivePage = ({ location, data }) => {
                 <th>Year</th>
                 <th>Title</th>
                 <th className="hide-on-mobile">Made at</th>
-                <th className="hide-on-mobile">Built with</th>
+                <th className="hide-on-mobile">Details</th>
                 <th>Link</th>
               </tr>
             </thead>
@@ -239,7 +239,10 @@ export default ArchivePage;
 export const pageQuery = graphql`
   {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/projects/" } }
+      filter: {
+        fileAbsolutePath: { regex: "/projects/" }
+        frontmatter: { showInArchive: { ne: false } }
+      }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

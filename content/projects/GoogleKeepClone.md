@@ -6,7 +6,8 @@ external: 'https://keep-vue.netlify.com/'
 tech:
   - Vue
   - Firebase
-showInProjects: true
+showInProjects: false
+showInArchive: false
 ---
 
 A simple Google Keep clone built with Vue and Firebase.

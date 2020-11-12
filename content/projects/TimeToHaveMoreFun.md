@@ -8,7 +8,8 @@ tech:
   - Tailwind CSS
   - Firebase
 company: ''
-showInProjects: true
+showInProjects: false
+showInArchive: false
 ---
 
 A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS
