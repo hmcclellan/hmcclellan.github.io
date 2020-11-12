@@ -149,8 +149,11 @@ const About = () => {
           <div>
             <p>Hello! I'm Haley, a marketing student in Austin, TX.</p>
             <p>
-              I'm currently in the Master of Science in Marketing program at
-              <a href="https://www.mccombs.utexas.edu">The University of Texas</a>.
+              I'm currently in the{' '}
+              <a href="https://www.mccombs.utexas.edu/Master-of-Science-in-Marketing">
+                Master of Science in Marketing
+              </a>{' '}
+              program at The University of Texas.
             </p>
             <p>I'm currently using the following tools:</p>
           </div>
