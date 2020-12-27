@@ -1,7 +1,7 @@
 ---
 date: '3'
 title: 'Marathon Geography Metrics'
-cover: './TCM.svg'
+cover: './TCM.png'
 external: '/tcm.pdf'
 tech:
   - Data Visualization Project

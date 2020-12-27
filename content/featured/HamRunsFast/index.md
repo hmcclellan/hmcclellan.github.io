@@ -2,7 +2,7 @@
 date: '1'
 title: 'HAM Runs Fast'
 cover: './blog.png'
-external: 'hamrunsfast.com'
+external: 'https://hamrunsfast.com'
 tech:
   - A Running Blog
   - Jekyll

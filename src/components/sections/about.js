@@ -132,13 +132,13 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Jekyll', 'Illustrator', 'R'];
+  const skills = ['Jekyll', 'Python', 'R'];
   const skill_website = [
     'https://jekyllrb.com/',
-    'https://www.adobe.com/products/illustrator.html',
+    'https://www.python.org/',
     'https://r-project.org',
   ];
-  const priors = ['ruby', 'python', '.NET'];
+  const priors = ['ruby', '.NET'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
