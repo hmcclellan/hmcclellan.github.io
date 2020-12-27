@@ -4,8 +4,7 @@ title: 'HAM Runs Fast'
 cover: './blog.png'
 external: 'https://hamrunsfast.com'
 tech:
-  - A Running Blog
-  - Jekyll
+  - Blog
 company: 'self'
 showInProjects: false
 showInArchive: false
